@@ -1,0 +1,99 @@
+// TESTING GALLERY USING FLEX BOX
+
+.project-gallery {
+  width: 100%;
+  // background-color: green;
+  // height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.projects {
+  height: 40vh;
+  width: 300px;
+  flex-grow: 1;
+  display: flex;
+  // border: 1px solid red;
+}
+
+.gallery-image {
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+.gallery-image:hover {
+  opacity: 0.5;
+}
+
+.projects h2 {
+  color: #4a90e2;
+  margin-bottom: 20px 0;
+}
+
+.projects:nth-of-type(1) {
+  width: 600px;
+  // flex-grow: 2;
+  background-image: url(../img/alex_header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+
+.about-project {
+  flex-direction: column;
+  align-self: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.projects:nth-of-type(4) {
+  width: 600px;
+  // flex-grow: 2;
+  background-image: url(../img/pokemon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.projects:nth-of-type(5) {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact {
+  display: flex;
+  // flex-direction: column;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.icon {
+  align-self: center;
+  -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.icon:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.about-me {
+  padding: 20px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    display: flex;
+    // flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    flex: 1;
+  }
+  .icon {
+
+  }
+}
